@@ -20,8 +20,8 @@ Gem::Specification.new do |s|
   s.metadata = { 'logstash_plugin' => 'true', 'logstash_group' => 'input' }
 
   # Gem dependencies
-  s.add_runtime_dependency 'logstash-core', '= 2.3.4'
-  s.add_runtime_dependency 'logstash-mixin-aws', '~> 2.0.4'
+  s.add_runtime_dependency 'logstash-core', '< 2.4'
+  s.add_runtime_dependency 'logstash-mixin-aws', '>= 2.0.4', '<= 4.0.0'
   s.add_runtime_dependency 'stud', '~> 0.0.22'
   s.add_runtime_dependency 'aws-sdk', '~> 2.1.0'
   s.add_runtime_dependency 'aws-sdk-v1'
